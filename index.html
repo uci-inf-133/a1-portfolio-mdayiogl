@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="en">
-
 <!--
 WRITTEN BY: Mehmet Sinan Dayioglu
 EMAIL: mdayiogl@uci.edu
 -->
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="'width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Mehmet Sinan Dayioglu">
-  <meta name="description" content="INF 133 personal portfolio">
+  <meta name="description" content="Personal portfolio for INF 133">
+  <title>Sinan Dayioglu | Portfolio</title>
+
+  <!-- Google Font (with fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Sinan Dayioglu | INF 133 Portfolio</title>
 </head>
 
 <body>
   <header>
     <h1>Mehmet Sinan Dayioglu</h1>
-    <p>University of California, Irvine</p>
-    <nav>
+    <p>INF 133 — User Interaction Software</p>
+
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="https://www.uci.edu" target="_blank" rel="noopener">UCI</a>
     </nav>
   </header>
 
@@ -29,34 +36,49 @@ EMAIL: mdayiogl@uci.edu
     <section>
       <h2>Welcome</h2>
       <p>
-        This website was created as part of the INF 133 User Interaction Software
-        assignment. It demonstrates basic HTML structure, external CSS styling,
-        responsive design, and accessibility considerations.
+        This is a personal portfolio created for INF 133. The purpose of this site
+        is to demonstrate fundamental web development skills including HTML,
+        CSS, responsive design, accessibility, and validation.
       </p>
+
+      <img
+        src="https://via.placeholder.com/600x300"
+        alt="Placeholder banner image representing a portfolio homepage">
     </section>
 
     <section class="grid">
-      <div class="card">
-        <h3>Major</h3>
-        <p>
-          I am a student at UC Irvine with interests in technology, design,
-          and user-centered software.
-        </p>
-      </div>
+      <article class="card">
+        <h3>What This Site Demonstrates</h3>
+        <ul>
+          <li>Multi-page navigation</li>
+          <li>Responsive layout</li>
+          <li>Accessible HTML structure</li>
+        </ul>
+      </article>
 
-      <div class="card">
-        <h3>Course Goals</h3>
+      <article class="card">
+        <h3>Next Steps</h3>
         <p>
-          Through INF 133, I aim to learn how to build usable, accessible,
-          and responsive web interfaces.
+          This portfolio can be expanded with projects, experience, or a contact
+          form as needed.
         </p>
-      </div>
+      </article>
     </section>
+
+    <aside>
+      <h3>External Resources</h3>
+      <p>
+        This site follows guidance from
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">
+          MDN Web Docs
+        </a>.
+      </p>
+    </aside>
   </main>
 
   <footer>
     <p>
-      <a href="http://validator.w3.org/check?uri=referer">W3C Validator</a>
+      <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
     </p>
   </footer>
 </body>
