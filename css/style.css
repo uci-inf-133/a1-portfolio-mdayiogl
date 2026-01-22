@@ -1,15 +1,15 @@
-/* General page styling */
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Header and navigation */
 header {
   background-color: #003366;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
 }
 
@@ -17,12 +17,8 @@ header h1 {
   margin: 0;
 }
 
-nav {
-  margin-top: 0.5rem;
-}
-
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin-right: 1rem;
 }
@@ -31,28 +27,46 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main layout */
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 1.5rem;
 }
 
-/* Advanced feature: Flexbox layout */
-.grid {
-  display: flex;
-  gap: 1rem;
+img {
+  max-width: 100%;
+  height: auto;
   margin-top: 1rem;
 }
 
-.card {
-  background-color: white;
+.grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.grid .card {
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 4px;
   flex: 1;
 }
 
-/* Responsive design */
+.grid .card h3 {
+  margin-top: 0;
+}
+
+aside {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eaeaea;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
 @media (max-width: 700px) {
   .grid {
     flex-direction: column;
@@ -62,10 +76,4 @@ nav a:hover {
     display: inline-block;
     margin-bottom: 0.5rem;
   }
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
 }
